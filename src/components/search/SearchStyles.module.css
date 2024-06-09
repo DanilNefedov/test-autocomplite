@@ -1,0 +1,135 @@
+.searchBtnStyle {
+    text-transform: uppercase;
+    color: var(--desactive-white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 3px 10px 5px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+}
+
+.active,
+.searchBtnStyle:hover {
+    background-color: var(--light-gray);
+}
+.active{
+    border-color: var(--border-gray);
+}
+.searchContainer {
+    position: relative;
+}
+
+.searchOpenBlock {
+    position: absolute;
+    background-color: var(--mian-black);
+    border: 1px solid var(--border-gray);
+    border-radius: 10px;
+    right: 0;
+    width: 300px;
+}
+
+.inputContainer {
+    position: relative;
+    margin: 15px;
+}
+
+.border {
+    height: 1px;
+    background-color: var(--border-gray);
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.input {
+    width: 100%;
+    padding: 5px 7px 5px 30px;
+    font-size: 18px;
+    color: var(--desactive-white);
+    background-color: transparent;
+}
+
+.titleTypes {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px 15px 15px;
+    justify-content: space-between;
+}
+
+.favorite {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.titleFavorite {
+    margin-left: 10px;
+}
+
+.titleSearch {
+    text-transform: uppercase;
+}
+
+.activeType {
+    color: var(--active-white);
+    font-weight: 500;
+}
+
+.favorite,
+.titleSearch {
+    cursor: pointer;
+}
+
+
+.containerScroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.containerScroll::-webkit-scrollbar-track {
+    background: none;
+
+}
+
+.containerScroll::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 7px;
+}
+
+
+
+
+.containerScroll {
+    backdrop-filter: blur(10px);
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 0 0 10px 10px;
+}
+
+.blockScroll{
+    
+    margin: 0 2px 0 7px;
+}
+
+.itemScroll{
+    border-radius: 10px;
+    padding: 0 9px 3px ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.itemScroll:hover{
+    background-color: var(--item-gray);
+}
+
+
+@media screen and (max-width:500px) {
+    .searchOpenBlock{
+        right: calc(50% - 150px);
+    }
+}

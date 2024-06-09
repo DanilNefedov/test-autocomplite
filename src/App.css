@@ -1,0 +1,14 @@
+
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.rotateSearch{
+  transform: rotate(-90deg);
+  margin-right: 10px;
+  margin-top: 3px;
+}
